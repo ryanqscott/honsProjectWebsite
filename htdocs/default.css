@@ -286,7 +286,6 @@
 	.title .byline
 	{
 		font-size: 1.3em;
-		/*color: rgba(255,255,255,0.60);*/
 		color: rgba(0,0,0,0.8);
 	}
 
@@ -311,6 +310,7 @@
 		padding: 0em 0em 7em 0em;
 		background: #111111 url(images/header-bg.png) no-repeat top;
 		background-size: cover;
+		border-bottom: 1px solid rgba(0,0,0,0.08);
 	}
 
 	#header-wrapper.narrow
@@ -344,7 +344,6 @@
 	#logo a
 	{
 		text-decoration: none;
-		/*color: rgba(255,255,255,1);*/
 		color: rgba(0,0,0,0.8);
 	}
 
@@ -378,7 +377,6 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		font-size: 0.8em;
-		/*color: rgba(255,255,255,0.80);*/
 		color: rgba(0,0,0,0.8);
 	}
 	
@@ -508,10 +506,10 @@
 
 
 /*********************************************************************************/
-/* Welcome                                                                       */
+/* Downloads                                                                       */
 /*********************************************************************************/
 
-	#welcome
+	#downloads
 	{
 		position: relative;
 		padding: 7em 0em 7em 0em;
@@ -520,19 +518,24 @@
 		text-align: center;
 	}
 	
-	#welcome .container
+	#downloads .container
 	{
 		width: 1000px;
 		padding: 0px 100px;
 		color: rgba(255,255,255,0.8);
 	}
+
+	#downloads .byline
+	{
+		color: rgba(255,255,255,0.6);
+	}
 	
-	#welcome a
+	#downloads a
 	{
 		color: rgba(255,255,255,1);
 	}
 	
-	#welcome .button
+	#downloads .button
 	{
 		background: #FFF;
 		color: #2651a8;
