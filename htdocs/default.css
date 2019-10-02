@@ -304,6 +304,12 @@
 		background-size: cover;
 	}
 
+	#header-wrapper.narrow
+	{
+		padding: 0;
+		background-position: top;
+	}
+
 	#header
 	{
 		position: relative;
