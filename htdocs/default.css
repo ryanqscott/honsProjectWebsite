@@ -7,7 +7,7 @@
 	{
 		margin: 0px;
 		padding: 0px;
-		background: #181818;
+		background: #FFF;
 		font-family: 'Didact Gothic', sans-serif;
 		font-size: 12pt;
 		font-weight: 200;
@@ -300,14 +300,13 @@
 	{
 		position: relative;
 		padding: 0em 0em 7em 0em;
-		background: #111111 url(images/header-bg.png) no-repeat center;
+		background: #111111 url(images/header-bg.png) no-repeat top;
 		background-size: cover;
 	}
 
 	#header-wrapper.narrow
 	{
 		padding: 0;
-		background-position: top;
 	}
 
 	#header
@@ -471,13 +470,31 @@
 	{
 		text-align: center;
 		font-size: 1em;
-		color: rgba(255,255,255,0.3);
+		color: rgba(0,0,0,0.6);
+		line-height: 7em;
+		margin: 0;
 	}
 	
 	#copyright a
 	{
 		text-decoration: none;
-		color: rgba(255,255,255,0.6);
+		color: rgba(0,0,0,0.8);
+	}
+
+	#copyright img
+	{
+		width: 7em;
+		height: 7em;
+	}
+
+	#copyright img.left
+	{
+		float: left;
+	}
+
+	#copyright img.right
+	{
+		float: right;
 	}
 
 
