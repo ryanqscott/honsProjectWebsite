@@ -286,7 +286,7 @@
 	.title .byline
 	{
 		font-size: 1.3em;
-		color: rgba(0,0,0,0.8);
+		color: rgba(0,0,0,0.7);
 	}
 
 /*********************************************************************************/
@@ -308,7 +308,7 @@
 	{
 		position: relative;
 		padding: 0em 0em 7em 0em;
-		background: #111111 url(images/header-bg.png) no-repeat top;
+		background: #FFF url(images/header-bg.png) no-repeat top;
 		background-size: cover;
 		border-bottom: 1px solid rgba(0,0,0,0.08);
 	}
@@ -488,6 +488,12 @@
 		color: rgba(0,0,0,0.8);
 	}
 
+	#copyright-columns
+	{
+		padding: 0 7em 0 7em;
+		margin: 0 auto;
+	}
+
 	#copyright img
 	{
 		width: 7em;
@@ -554,6 +560,17 @@
 	#one-column .title
 	{
 		text-align: center;
+	}
+
+	#one-column .title .byline
+	{
+		text-align: center;
+		color: rgba(0,0,0,.5);
+	}
+
+	#one-column p
+	{
+		text-align: justify;
 	}
 
 	#three-column
