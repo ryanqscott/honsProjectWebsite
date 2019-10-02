@@ -517,6 +517,16 @@
 /* Extra                                                                         */
 /*********************************************************************************/
 
+	#one-column
+	{
+		margin-bottom: 5em;
+	}
+
+	#one-column .title
+	{
+		text-align: center;
+	}
+
 	#three-column
 	{
 		text-align: center;
