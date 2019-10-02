@@ -19,6 +19,17 @@ Released   : 20140330
 <link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#learn-more").click(function(e){
+			e.preventDefault();
+			$("html").animate({
+				scrollTop: $("#wrapper").offset().top
+			}, 1000);
+		});
+	});
+</script>
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
@@ -40,11 +51,11 @@ Released   : 20140330
 	</div>
 	<div id="banner" class="container">
 		<div class="title">
-			<h2>Cost of Complexity in Robot Bodies</h2>
+			<h2 onclick="document.getElementById('wrapper').scrollIntoView(true)">Cost of Complexity in Robot Bodies</h2>
 			<span class="byline">Effects of morphological and neural complexity costs in neuroevolution</span>
 		</div>
 		<ul class="actions">
-			<li><a href="#" class="button">Learn More</a></li>
+			<li><a id="learn-more" href="#" class="button">Learn More</a></li>
 		</ul>
 	</div>
 </div>
@@ -86,17 +97,17 @@ Released   : 20140330
 			<h2>Downloads</h2>
 			<span class="byline">General project resources</span>
 		</div>
-		<p>Please find the project downloads below. For section-specific resources, please see the relevant section pages.</p>
+		<p>Please find the download links for the general project resources below. For section-specific resources, please visit the relevant website pages.</p>
 		<ul class="actions">
-			<li><a href="./files/cobb-project-proposal-2019.pdf" target="_blank" class="button">Project Proposal</a></li>
-			<li><a href="#" target="_blank" class="button">Project Poster</a></li>
+			<li><a href="./files/cobb-project-proposal-2019.pdf" target="_blank" class="button"><img src="./images/download-icon.png"/>Project Proposal</a></li>
+			<li><a href="./files/cobb-project-poster-2019.pdf" target="_blank" class="button"><img src="./images/download-icon.png"/>Project Poster</a></li>
 		</ul>
 	</div>
 </div>
 <div id="copyright" class="container">
 	<img class="left" src="images/uct-logo.png"/>
 	<img class="right" src="images/cs-logo.png"/>
-	<p>Team members: Scott Hallauer, Ryan Scott and Tristan Joseph | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+	<p>&copy; University of Cape Town | Team members: Scott Hallauer, Ryan Scott and Tristan Joseph | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
 </div>
 </body>
 </html>
