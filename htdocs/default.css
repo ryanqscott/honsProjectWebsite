@@ -36,6 +36,14 @@
 	{
 		line-height: 180%;
 	}
+
+	div#section-intro
+	{
+		margin: 0 auto;
+		width: 75%;
+		color:#000;
+		margin-bottom:3em;
+	}
 	
 	strong
 	{
@@ -84,6 +92,12 @@
 	{
 		float: left;
 		margin: 0 2em 2em 0;
+	}
+	
+	.image-right
+	{
+		float: right;
+		margin: 0 0 2em 2em;
 	}
 	
 	.image-centered

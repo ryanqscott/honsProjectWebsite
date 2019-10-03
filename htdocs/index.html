@@ -52,7 +52,7 @@ Released   : 20140330
     <div id="banner" class="container">
         <div class="title">
             <h2>Cost of Complexity in Robot Bodies</h2>
-            <span class="byline">Effects of morphological and neural complexity costs in neuroevolution</span>
+            <span class="byline">Effect of morphological and neural complexity costs in neuroevolution</span>
         </div>
         <ul class="actions">
             <li><a id="learn-more" href="#" class="button">Learn More</a></li>
@@ -65,34 +65,38 @@ Released   : 20140330
             <h2>Overview</h2>
             <span class="byline">Evolving complexity in multi-robot systems</span>
         </div>
+		<img src="images/task-environment.png" class="image-right" style="border:1px solid rgba(0,0,0,0.4);width:25%;"/>
         <p>The field of Evolutionary Swarm Robotics seeks to simulate natural evolution in evolving robot morphologies (or bodies) and controllers (or brains) for collaborative task environments. This project aims to further investigate the relationship between robot complexity and task performance in a collective gathering task, while extending previously defined approaches to imposing an evolutionary cost on complexity.</p>
         <p>Single-objective evolutionary algorithms (NEAT-M and HyperNEAT-M) were implemented, constrained by the energy cost associated with draining a simulated battery in proportion to some measure of robot complexity (morphological or neural). One of the goals of using this approach is to address criticism of previous work which embraced multi-objective methods considered less true to natural evolution. Results indicate that costs on complexity are associated with evolved robots exhibiting increasingly degraded task performance in more difficult environments. It is surmised that higher complexity is required for group coordination behaviour.</p>
     </div>
     <div id="three-column" class="container">
         <div class="title">
             <h2>Sections</h2>
-            <span class="byline">Single-objective evolution with NEAT-M and HyperNEAT-M</span>
+            <span class="byline">Applying NEAT-M and HyperNEAT-M to evolve morphological and neural complexity</span>
 		</div>
-		<p style="color:#000;margin-bottom:3em;">The project was divided into three separate investigations, each carried out by one of the team members. A brief description of<br/>each section is provided below, with links to the relevant pages.</p>
+		<div id="section-intro">
+			<p>The project was divided into three separate investigations, each carried out by one of the team members. A brief description of each section is provided below, with links to the relevant pages.</p>
+		</div>
         <div class="boxA">
             <h3>Scott</h3>
 			<img src="images/morpho-neatm.png" style="width:60%;"/>
-            <p>Phasellus pellentesque, ante nec iaculis dapibus, eros justo auctor lectus, a lobortis lorem mauris quis nunc. Praesent pellentesque facilisis elit. Class aptent taciti sociosqu ad  torquent per conubia nostra.</p>
+            <p>Single-objective <b>NEAT-M</b> with a cost implemented based on the evolved number and type of sensors active on a robot body, which represents <b>morphological</b> complexity.</p>
             <a href="scott.html" class="button button-alt">More Info</a>
         </div>
         <div class="boxB">
             <h3>Ryan</h3>
 			<img src="images/morpho-hyperneatm.png" style="width:60%;"/>
-            <p>Single-objective HyperNEAT-M with a cost implemented as the number and type of sensors evolved and active on a robot, which represent morphological complexity.</p>
+            <p>Single-objective <b>HyperNEAT-M</b> with a cost implemented based on the evolved number and type of sensors active on a robot body, which represents <b>morphological</b> complexity.</p>
             <a href="ryan.html" class="button button-alt">More Info</a>
         </div>
         <div class="boxC">
             <h3>Tristan</h3>
 			<img src="images/neuro-neatm.png" style="width:60%;"/>
-            <p>Single-objective NEAT-M with a cost implemented as the numbers of nodes and connections in the connected digraph that represents the artificial neural network acting as the controller of a robot body.</p>
+            <p>Single-objective <b>NEAT-M</b> with a cost implemented based on the number of nodes and connections in the connected digraph that represents the artificial <b>neural</b> network acting as the controller of a robot body.</p>
             <a href="tristan.html" class="button button-alt">More Info</a>
         </div>
-    </div>
+	</div>
+	<!--
 	<div class="container">
 		<div class="image">
 			<figure>
@@ -101,6 +105,7 @@ Released   : 20140330
 			</figure>
 		</div>
 	</div>
+	-->
 </div>
 <div id="downloads">
     <div class="container">
