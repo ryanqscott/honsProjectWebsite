@@ -27,11 +27,11 @@ Released   : 20140330
 <div id="header-wrapper" class="narrow">
 	<div id="header" class="container">
 		<div id="logo">
-			<h1><a href="/">COBB</a></h1>
+			<h1><a href="index.html">COBB</a></h1>
 		</div>
 		<div id="menu">
 			<ul>
-				<li><a href="/" accesskey="1" title="">Overview</a></li>
+				<li><a href="index.html" accesskey="1" title="">Overview</a></li>
 				<li><a href="scott.html" accesskey="2" title="">Scott</a></li>
 				<li><a href="ryan.html" accesskey="3" title="">Ryan</a></li>
 				<li class="active"><a href="#" accesskey="4" title="">Tristan</a></li>
@@ -43,6 +43,31 @@ Released   : 20140330
 	<div class="container">
 		<div class="title">
 			<h2>Neural Complexity (NEAT-M)</h2>
+		</div>
+	</div>
+	<div class="container">
+		<h3>Background and Context</h3>
+		<p>Evolutionary robotics has grown increasingly popular in the last 3 decades, recently focusing attention on the subfield of Collective Robotics, specifically researching evolutionary complexity costs and their associated effect on collective robot task performance. The reasons for this research are rooted in the practical benefits in developing low-complexity, and therefore low-cost, robot controllers for real-world production and use all while reducing computation time</p>
+		<p>In biology, there are hypotheses which suggest that neural complexity in living organisms is a function of social and cooperative behaviour. In evolutionary robotics, resources are limited and the complexity of a robot body can result in a significant computational overhead when task complexity becomes necessarily large. Robot configurations and evolutionary algorithms are constantly in pursuit of optimization to ensure task completion in the most effective manner possible. This naturally leads to the motivation for minimizing complexity while maximizing performance.</p>
+
+		<h3>Project Goals</h3>
+		<p>The aim of this project is to broaden the available research and information regarding the intriguing and conflicting theories surrounding the relationship between evolutionary processes and complexity (morphology), specifically their connection to collective robotics teams cooperating to achieve task gathering and how that relationship derives performance (behaviour).</p>
+		<p>Specifically, it looks to contrast the results on imposing a cost of complexity during evolution versus evolution without a cost. This particular project will additionally be focusing on the neural interpretation of the definition of morphological complexity which is defined as the number of nodes and links, in the connected digraph, that represents the artificial neural network that acts as the controller of a robot body.</p>
+		<p>These research objectives were largely motivated by previous work and the conclusion that the approaches thereof were neither biologically plausible nor were they representative of natural collective behaviour systems where neuro-evolution is constrained by energy restrictions.</p>
+
+		<h3>Results</h3>
+		<p>The results showed that imposing a neural cost on complexity resulted in an increased selection pressure towards producing simpler robot morphologies while failing to derive behaviour that was at least as effective as those that evolved without a cost. For each level of difficulty, those controllers evolved with a cost maintained a very low neural complexity, barely increasing at all. Task performance decreased as task environments grew more difficult and performance behaviour was comparably less effective in robots evolved with a cost.</p>
+		<div class="image">
+			<figure>
+				<img src="images/neuro_barplots.jpg" alt=""/>
+				<figcaption><b>Figure 1</b> - Left: Average maximum task performance for the best networks produced by NEAT with and without a cost in the three environments over evolutionary time (generations). Right: Average neural complexity for the best networks produced by NEAT with and without a cost in the three environments over evolutionary time (generations)</figcaption>
+			</figure>
+		</div>
+		<div class="image">
+			<figure>
+				<img src="images/neuro_trend.jpg" alt=""/>
+				<figcaption><b>Figure 2</b> - Left: Average task performance produced by NEAT over all 14 runs of 250 epochs with and without a cost in the three environments over evolutionary time (generations). Right: Average neural complexity produced by NEAT over all 14 runs of 250 epochs with and without a cost in the three environments over evolutionary time (generations)</figcaption>
+			</figure>
 		</div>
 	</div>
 </div>
