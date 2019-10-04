@@ -41,8 +41,8 @@
 	{
 		margin: 0 auto;
 		width: 75%;
-		color:#000;
-		margin-bottom:3em;
+		color: #000;
+		margin-bottom: 3em;
 	}
 	
 	strong
@@ -64,6 +64,11 @@
 		overflow: hidden;
 		margin: 0em auto;
 		width: 1200px;
+	}
+
+	.overflowable
+	{
+		overflow: visible;
 	}
 	
 /*********************************************************************************/
@@ -290,11 +295,44 @@
 	.title
 	{
 		margin-bottom: 3em;
+		position: relative;
 	}
 	
 	.title h2
 	{
 		font-size: 2.7em;
+	}
+
+	.title .title-tag
+	{
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: -5px;
+		border: 2px solid rgba(0,0,0,0.8);
+		padding: 5px;
+		font-size: 0.5em;
+		font-family: 'Courier', Courier, monospace;
+		font-weight: normal;
+		line-height: 0.9em;
+		border-radius: 10px;
+	}
+
+	.title .title-tag.red
+	{
+		background-color: #FED7D7;
+	}
+
+	.title .title-tag.blue
+	{
+		background-color: #D7FEFE;
+	}
+
+	.title .title-icon
+	{
+		position: absolute;
+		width: 150px;
+		top: -40px;
+		right: -10px;
 	}
 	
 	.title .byline
