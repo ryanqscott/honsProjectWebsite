@@ -410,7 +410,7 @@
 	{
 		position: relative;
 		padding: 0em 0em 7em 0em;
-		background: #FFF url(images/header-bg.png) no-repeat top fixed;
+		background: #FFF url(images/header-bg.png) no-repeat top;
 		background-size: cover;
 		border-bottom: 1px solid rgba(0,0,0,0.08);
 		min-width: 1200px;
