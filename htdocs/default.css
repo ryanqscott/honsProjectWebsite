@@ -80,6 +80,13 @@
 		text-align: center;
 	}
 
+	.image-banner
+	{
+		margin-top: -90px;
+		margin-bottom: 85px;
+		text-align: center;
+	}
+
 	.image
 	{
 		display: inline-block;
@@ -110,6 +117,15 @@
 	{
 		float: right;
 		margin: 0 0 2em 2em;
+		width: 290px;
+		margin-top: -10px;
+	}
+
+	.image-right img
+	{
+		border: 1px solid rgba(0,0,0,0.4);
+		width: 100%;
+		box-sizing: border-box;
 	}
 	
 	.image-centered
@@ -124,9 +140,24 @@
 		width: auto;
 	}
 
+	figure{
+		margin: 0;
+	}
+
 	figcaption
 	{
+		color: rgba(0,0,0,0.7);
 		text-align: justify;
+	}
+
+	.caption-centered
+	{
+		text-align: center;
+	}
+
+	figcaption b
+	{
+		color: rgba(0,0,0,1);
 	}
 
 /*********************************************************************************/
@@ -265,6 +296,13 @@
 	.boxC
 	{
 		width: 384px;
+	}
+
+	.boxA b,
+	.boxB b,
+	.boxC b
+	{
+		color: #000;
 	}
 
 	.boxA,
@@ -592,7 +630,7 @@
 	{
 		width: 1000px;
 		padding: 0px 100px;
-		color: rgba(255,255,255,0.8);
+		color: rgba(255,255,255,1);
 	}
 
 	#downloads .byline

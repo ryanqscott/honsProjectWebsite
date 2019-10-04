@@ -64,11 +64,24 @@ Released   : 20140330
         <div class="title">
             <h2>Overview</h2>
             <span class="byline">Evolving complexity in multi-robot systems</span>
-        </div>
-		<img src="images/task-environment.png" class="image-right" style="border:1px solid rgba(0,0,0,0.4);width:25%;"/>
+		</div>
+		<div class="image-right">
+			<figure>
+				<img src="images/task-environment.png"/>
+				<figcaption class="caption-centered"><b>Figure 1.</b> The simulated task environment.</figcaption>
+			</figure>
+		</div>
         <p>The field of Evolutionary Swarm Robotics seeks to simulate natural evolution in evolving robot morphologies (or bodies) and controllers (or brains) for collaborative task environments. This project aims to further investigate the relationship between robot complexity and task performance in a collective gathering task, while extending previously defined approaches to imposing an evolutionary cost on complexity.</p>
-        <p>Single-objective evolutionary algorithms (NEAT-M and HyperNEAT-M) were implemented, constrained by the energy cost associated with draining a simulated battery in proportion to some measure of robot complexity (morphological or neural). One of the goals of using this approach is to address criticism of previous work which embraced multi-objective methods considered less true to natural evolution. Results indicate that costs on complexity are associated with evolved robots exhibiting increasingly degraded task performance in more difficult environments. It is surmised that higher complexity is required for group coordination behaviour.</p>
-    </div>
+		<p>Single-objective evolutionary algorithms (NEAT-M and HyperNEAT-M) were implemented, constrained by the energy cost associated with draining a simulated battery in proportion to some measure of robot complexity (morphological or neural). One of the goals of using this approach is to address criticism of previous work which embraced multi-objective methods considered less true to natural evolution. Results indicate that costs on complexity are associated with evolved robots exhibiting increasingly degraded task performance in more difficult environments. It is surmised that higher complexity is required for group coordination behaviour.</p>
+	</div>
+	<div class="image-banner">
+		<div class="image" style="width: 50%;">
+			<figure>
+				<img src="images/robot-design.png"/>
+				<figcaption class="caption-centered"><b>Figure 2.</b> The Khepera III robot morphology on which our simulated robots are based.</figcaption>
+			</figure>
+		</div>
+	</div>
     <div id="three-column" class="container">
         <div class="title">
             <h2>Sections</h2>
@@ -80,7 +93,7 @@ Released   : 20140330
         <div class="boxA">
             <h3>Scott</h3>
 			<img src="images/morpho-neatm.png" style="width:60%;"/>
-            <p>Single-objective <b>NEAT-M</b> with a cost implemented based on the evolved number and type of sensors active on a robot body, which represents <b>morphological</b> complexity.</p>
+            <p>Single-objective <b>NEAT-M</b> with a cost implemented based on the evolved number and type of sensors active on a robot body, which represents <b>morphological</b><br/>complexity.</p>
             <a href="scott.html" class="button button-alt">More Info</a>
         </div>
         <div class="boxB">
@@ -96,16 +109,6 @@ Released   : 20140330
             <a href="tristan.html" class="button button-alt">More Info</a>
         </div>
 	</div>
-	<!--
-	<div class="container">
-		<div class="image">
-			<figure>
-				<img src="images/diagram.png" alt=""/>
-				<figcaption><b>Figure 1</b> - Left: Visual representation of the Khepera-III robot that the robots’ morphology has been modelled after. Middle left: Key containing the descriptions of each sensor that can be used by a robot controller. Middle right: A diagram representing the simulated robot model, it depicts the field-of-view of the various sensors described previously. Each robot body is controlled by an Artificial Neural Network that maps to the input (sensors) and output (actuator) nodes. Right: A snapshot of the simulator [13] containing a population of robot controllers actively attempting to coordinate as many blocks in the target area as possible. The colours relate to the field-of-view for the previously described sensors.</figcaption>
-			</figure>
-		</div>
-	</div>
-	-->
 </div>
 <div id="downloads">
     <div class="container">
