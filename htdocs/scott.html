@@ -49,13 +49,31 @@ Released   : 20140330
 	</div>
 	<div class="container">
 		<h3>Background and Context</h3>
-		<p><i>Swarm robotics</i> (SR) is the problem-solving approach whereby a multi-robot system accomplishes specific task goals through collaborative group behaviour. <i>Evolutionary robotics</i> (ER) is the field of research into the automatic design of autonomous robot controllers and morphologies through processes which imitate natural evolution. <i>Evolutionary swarm robotics</i> represents the intersection of these two fields.</p>
+		<p><i>Swarm robotics</i> (SR) is the problem-solving approach whereby a multi-robot system accomplishes specific task goals through collaborative group behaviour. <i>Evolutionary robotics</i> (ER) is the field of research into the automatic design of autonomous robot controllers and morphologies through processes which imitate natural evolution. <i>Evolutionary swarm robotics</i> represents the intersection of these two fields, enabling the automated development of robot controllers and bodies which facilitate the self-organising, group behaviour patterns required in SR systems.</p>
+		<p><i>Neuroevolution</i> is a broad term encompassing an array of approaches to training <i>artificial neural networks</i> (ANNs) – using <i>evolutionary algorithms</i> (EAs) – for specialised behaviours, all of which draw on insights from neuroscience and evolutionary biology. In conventional <i>single-objective</i> neuroevolution, the optimisation of only one parameter is considered in the evolutionary process. Neuroevolution of Augmenting Topologies (NEAT) is a state-of-the-art single-objective neuroevolution strategy that uses a direct, genetic encoding scheme of ANNs to evolve both network topology and connection weights. NEAT-Morphologies (NEAT-M) is an extension to the NEAT algorithm which directly incorporates the evolution of morphology into the neuroevolution process.</p>
+		<p><i>Morphological complexity</i> is related to the layout of the physical body of a robotic system, including body shape and the number and arrangement of sensors on the body. Research by Nagar, Furman and Nitschke, in 2019, applied the strategies of single- and multi-objective neuroevolution of robotic systems to the study of the cost of complexity in evolutionary theory. In this study, robots were evolved for a collective gathering task where the objectives of high task performance and low morphological complexity were optimised. Seemingly counterintuitively, in more difficult task environments, robots evolved with a cost on morphological complexity achieved higher task performance (with simpler morphologies) than those evolved without such a cost.</p>
 
 		<h3>Project Goals</h3>
-		<p></p>
+		<p>Implementing energy costs in evolutionary robotics systems presents a promising approach to developing more efficient robot designs. Multi-objective evolutionary techniques have often been employed to achieve the desired progression towards candidate solutions which optimise more than one parameter. Nagar, Furman and Nitschke investigated such a strategy to evolve robots with the objectives of minimising morphological complexity and maximising task performance. However, a potential criticism of this approach is that the artificial selection process is overly stringent and untrue to nature (where morphological simplicity is not <i>directly</i> selected for).</p>
+		<p>This project aims to address these concerns by investigating the impact of introducing sensor energy costs into the design of the robot, which is expected to engender an indirect selective pressure against morphological complexity. A single-objective evolutionary process is used in which only task performance is maximised. It is hoped that this method can achieve similar evolutionary results to previous work, while more closely resembling natural evolution.</p>
 
 		<h3>Results</h3>
-		<p></p>
+		<p>The best evolved candidate solutions (i.e. having the highest task performance) in each environment have been graphed on box plots for normalised measures of task performance and morphological complexity (Figure 1). It was found that task performance for robots evolved with energy costs decreased, on average, by 0.6%, 27.9% and 28.1% in the simple, medium and difficult task environments, respectively. The evolved morphological complexity for robots with energy costs decreased, on average, by 56.9%, 60.6% and 57.5% in the simple, medium and difficult task environments, respectively.</p>
+		<p>Figure 2 further illustrates the significant impact of energy costs on evolved morphological complexity. Here, it can be observed how robots without energy costs rapidly evolve more complex morphologies, while those with energy costs remain at the same approximate complexity level throughout the evolutionary process.</p>
+		<p>Therefore, these findings contradict the results of previous work by Nagar, Furman and Nitschke. That is, imposing an energy cost on morphological complexity in single-objective evolution results in the the development of morphologically simpler robots which achieve <i>degraded</i> performance in a collective gathering task. It is proposed that the more complex sensory requirement for group co-ordination behaviour is the reason for degraded task performance in increasingly difficult environments.</p>
+
+		<div class="image">
+			<figure>
+				<img src="images/morpho-neatm-boxplots.png" alt=""/>
+				<figcaption><b>Figure 1.</b> <i>Left:</i>&nbsp;Average maximum task performance for robots evolved with and without sensor energy costs, in each of the three environment definitions. <i>Right:</i>&nbsp;Average morphological complexity for robots evolved with and without sensor energy costs, in each of the three environment definitions.</figcaption>
+			</figure>
+		</div>
+		<div class="image">
+			<figure>
+				<img src="images/morpho-neatm-trend.png" alt=""/>
+				<figcaption><b>Figure 2.</b> Progression of average morphological complexity for robots evolved with and without sensor energy costs over evolutionary time in each environment.</figcaption>
+			</figure>
+		</div>
 	</div>
 </div>
 <div id="downloads">
