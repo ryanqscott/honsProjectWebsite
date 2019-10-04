@@ -575,13 +575,29 @@
 		border-top: 1px solid rgba(0,0,0,0.08);
 	}
 	
-	#copyright p
+	#copyright table
 	{
+		width: 1200px;
+	}
+
+	#copyright td.image
+	{
+		width: 112.5px;
+		padding-top: 10px;
+	}
+
+	#copyright td.text
+	{
+		width: 325px;
+		vertical-align: top;
 		text-align: center;
 		font-size: 1em;
 		color: rgba(0,0,0,0.6);
-		line-height: 7em;
-		margin: 0;
+	}
+
+	#copyright b
+	{
+		color: rgba(0,0,0,1);
 	}
 	
 	#copyright a
@@ -590,26 +606,10 @@
 		color: rgba(0,0,0,0.8);
 	}
 
-	#copyright-columns
-	{
-		padding: 0 7em 0 7em;
-		margin: 0 auto;
-	}
-
 	#copyright img
 	{
-		width: 7em;
-		height: 7em;
-	}
-
-	#copyright img.left
-	{
-		float: left;
-	}
-
-	#copyright img.right
-	{
-		float: right;
+		width: 112.5px;
+		margin: 0;
 	}
 
 
